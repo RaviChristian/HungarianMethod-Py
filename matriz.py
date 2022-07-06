@@ -1,17 +1,6 @@
-# import sys
-
-import random as rd
 import numpy as np
 import rotate_matrix as rm
 from copy import deepcopy
-
-Entrada = [
-    #j1 j2 j3 j4
-    [82,83,69,92],  #w1
-    [77,37,49,92],  #w2
-    [11,69,5,86],   #w3
-    [8,9,98,23]     #w4
-]
 
 #Func auxiliar, só pra melhorar legibilidade.
 
@@ -52,17 +41,6 @@ def columnReduction(matriz):
 #1 coluna vira a 1 linha e assim por diante.
 
 def rotateMatrix(matriz):
-    # ordemMatriz = len(matriz)
-    # result = []
-    # linha = 0
-    # linhaTemporaria = []
-    # while linha != ordemMatriz:
-    #     for coluna in range(0,ordemMatriz):
-    #         linhaTemporaria.append(matriz[coluna][linha])
-    #     linha += 1
-    #     result.append(linhaTemporaria)
-    #     linhaTemporaria = []
-    # return result
     matrizResult = []
     matrizLib = rm.anti_clockwise(matriz) # Pega a matriz invertida 90°
 
@@ -262,29 +240,12 @@ def optimalAssignment(entrada,matrizResult,formaDoOutput=None):
     else:
         return indices
         
-            
-
-Entrada = [
-    #j1 j2 j3 j4
-    [82,83,69,92],  #w1
-    [77,37,49,92],  #w2
-    [11,69,5,86],   #w3
-    [8,9,98,23]     #w4
-]
-
-# Entrada = [
-#     #j1 j2 j3 j4
-#     [42,90,15,84],  #w1
-#     [51,77,8,38],  #w2
-#     [41,44,52,10],   #w3
-#     [22,85,51,13]     #w4
-# ]
 
 
 #step 4 volta 1 matriz
 #step2 volta 1 matriz e step 3 volta os indices
 
-#L = setLines 
+
 def elegibleToStepFour(entrada,lista):
     x = len(lista[0]) + len(lista[1])
     y = len(entrada)
@@ -311,28 +272,18 @@ def main(Entrada):
         step5 = optimalAssignment(Entrada,step2,"indices")
 
     # STEP 4
+    print(step5)
     return step5
 
-print(main(Entrada))
+Entrada = [
+    #j1 j2 j3 j4
+    [82,83,69,92],  #w1
+    [77,37,49,92],  #w2
+    [11,69,5,86],   #w3
+    [8,9,98,23]     #w4
+]
 
 
+main(Entrada)
 
 
-
-
-def geradorDeMatrizQuadradaAleatoria(n):
-    matriz = []
-    linha = []
-    for linhas in range(0,n):
-        for colunas in range(0,n):
-            linha.append(rd.randint(0,1000))
-        matriz.append(linha)
-        linha = []
-    return matriz
-
-print(geradorDeMatrizQuadradaAleatoria(10))
-
-
-
-
-#TESTES
