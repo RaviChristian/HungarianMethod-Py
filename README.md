@@ -9,10 +9,17 @@ Apenas precisa utilizar o método main(ENTRADA).
 
 
 a. HungarianMethod.py
+
 b. COntato do desenvolvedor: javier.vieira@arapiraca.ufal.br
+
 c. Endereço: Av. Manoel Severino Barbosa, Bom Sucesso, Arapiraca - AL
-d. Primeiro ano disponível: 2022
+
+d. Primeiro ano disponível: 2022.
+
 e. Hardware usado: Processador 3.7GHz Ryzen 5 3400G, 16 GB 2666 MHz DDR4, SSD 256GB.
-f. Software necessário: Todo o projeto foi feito em Linux Mint 5.2.7 (cinnamon)
-g. Disponíbilidade: github.com/RaviChristian/HungarianMethod-Py/
+
+f. Software necessário: Todo o projeto foi feito em Linux Mint 5.2.7 (cinnamon).
+
+g. Disponíbilidade: github.com/RaviChristian/HungarianMethod-Py/.
+
 h. Custo: Todas as ferramentas utilizadas são gratuitas.
