@@ -10,7 +10,8 @@ Apenas precisa utilizar o método main(ENTRADA).
 
 a. HungarianMethod.py
 
-b. COntato do desenvolvedor: javier.vieira@arapiraca.ufal.br
+b. ###Contato Do desenvolvedor
+javier.vieira@arapiraca.ufal.br
 
 c. Endereço: Av. Manoel Severino Barbosa, Bom Sucesso, Arapiraca - AL
 
